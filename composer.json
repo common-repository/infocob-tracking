@@ -1,0 +1,24 @@
+{
+	"name": "infocob/tracking",
+	"require": {
+		"firebase/php-jwt": "^5.0",
+		"ext-json": "*",
+		"ext-curl": "*",
+		"twig/twig": "^3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Infocob\\Tracking\\Admin\\": [
+				"admin/classes",
+				"admin/classes/templates",
+				"admin/classes/templates/email",
+				"admin/controllers",
+				"admin/includes",
+				"admin/views"
+			],
+			"Infocob\\Tracking\\": [
+				""
+			]
+		}
+	}
+}

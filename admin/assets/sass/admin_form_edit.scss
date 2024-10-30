@@ -1,0 +1,61 @@
+.ms-drop input[type="checkbox"] {
+    margin-top: 0.15rem;
+}
+
+.ms-choice > div {
+    background: none;
+    
+    &.open {
+        background: none;
+    }
+}
+
+span {
+    &.text {
+        &.red {
+            color: red;
+        }
+        
+        &.blue {
+            color: blue;
+        }
+        
+        &.bold {
+            font-weight: bold;
+        }
+    }
+}
+
+input {
+    &.infocob_tracking_copy {
+        width: 250px;
+    }
+}
+
+.full-width {
+    width: 100% !important;
+    
+    &.ms-parent {
+        width: 100% !important;
+    }
+}
+
+/*
+    Logo email config
+ */
+.logo_email {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+    .logo_actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        
+        button {
+            color: red;
+        }
+    }
+}

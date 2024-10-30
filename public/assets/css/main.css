@@ -1,0 +1,104 @@
+div.infocob_tracking_loader {
+  display: none;
+}
+div.infocob_tracking_loader.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  height: 110vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+div.infocob_tracking_loader span.text_loader {
+  color: white;
+}
+div.infocob_tracking_loader span.img_loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+div.infocob_tracking_loader span.img_loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: infocob_tracking_loader 1.2s linear infinite;
+}
+@keyframes infocob_tracking_loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.infocob-tracking-form-start .dadywinnie, .infocob-tracking-form-end .dadywinnie, .infocob-tracking-form-sendinblue .dadywinnie {
+  display: none;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox, .infocob-tracking-form-end .if-field-slide-checkbox, .infocob-tracking-form-sendinblue .if-field-slide-checkbox {
+  position: relative;
+  margin: 10px 0;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox input[type=checkbox], .infocob-tracking-form-end .if-field-slide-checkbox input[type=checkbox], .infocob-tracking-form-sendinblue .if-field-slide-checkbox input[type=checkbox] {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  z-index: -1;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox span, .infocob-tracking-form-end .if-field-slide-checkbox span, .infocob-tracking-form-sendinblue .if-field-slide-checkbox span {
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  padding: 0 0 5px 50px;
+  margin: 0;
+  display: inline-block;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox span:before, .infocob-tracking-form-end .if-field-slide-checkbox span:before, .infocob-tracking-form-sendinblue .if-field-slide-checkbox span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 24px;
+  background: #dedede;
+  border-radius: 20px;
+  transition: 0.3s;
+  display: block;
+  z-index: 1;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox span:after, .infocob-tracking-form-end .if-field-slide-checkbox span:after, .infocob-tracking-form-sendinblue .if-field-slide-checkbox span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 20px;
+  transition: 0.3s;
+  z-index: 2;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox span:active:after, .infocob-tracking-form-end .if-field-slide-checkbox span:active:after, .infocob-tracking-form-sendinblue .if-field-slide-checkbox span:active:after {
+  width: 16px;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox input:checked + span:before, .infocob-tracking-form-end .if-field-slide-checkbox input:checked + span:before, .infocob-tracking-form-sendinblue .if-field-slide-checkbox input:checked + span:before {
+  background: #0693e3;
+}
+.infocob-tracking-form-start .if-field-slide-checkbox input:checked + span:after, .infocob-tracking-form-end .if-field-slide-checkbox input:checked + span:after, .infocob-tracking-form-sendinblue .if-field-slide-checkbox input:checked + span:after {
+  left: 36px;
+  transform: translateX(-100%);
+}
+
+/*# sourceMappingURL=main.css.map */
